@@ -1,8 +1,3 @@
-PATH
-  remote: theme/tabeethaschool
-  specs:
-    tabeethaschool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,7 +24,6 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    minima (1.0.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     rb-fsevent (0.9.7)
@@ -44,8 +38,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.2.1)
-  minima
-  tabeethaschool!
 
 RUBY VERSION
    ruby 2.3.1p112
