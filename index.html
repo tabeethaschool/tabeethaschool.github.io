@@ -4,17 +4,30 @@ title: Home
 order: 1
 ---
 
-<div id="index">
-
-    <div class="content page-scroll">
-    <!-- first section - Home -->
-        <div id="home" class="pad-section text-vcenter" >
-            <div class="text-vcenter">
-                <h1 data-translate="name">Wohnung in Leipzig</h1>
-                <h3 data-translate="description">"Die sch&ouml;nste Stadt der Welt."</h3>
-                <a href="#about" class="btn btn-default btn-lg" data-translate="more">More</a>
-            </div>
-        </div>
+<div id="index" class="content page-scroll">
+<!-- first section - Home -->
+    <div id="home" class="pad-section vcenter" >
+        <h1>{{ site.title }}</h1>
+        <hr/>
+        <h3>{{ site.description }}</h3>
+        <p></p>
+        <a href="#about1" class="more_btn">
+            More<br/>
+            <i class="glyphicon glyphicon-chevron-down"></i>
+        </a>
     </div>
 
+    <div id="about1" class="pad-section" >
+        <div class="left">
+            <img src="{{ size.baseurl}}/static/images/index/about1.jpg" />
+        </div>
+        <div class="right vcenter">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p></p>
+            <a href="#about2" class="more_btn">
+                More<br/>
+                <i class="glyphicon glyphicon-chevron-down"></i>
+            </a>
+        </div>
+    </div>
 </div>

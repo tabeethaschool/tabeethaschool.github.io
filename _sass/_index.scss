@@ -1,53 +1,137 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
 #index {
-	height: 100%;
-	width: 100%;
-	font-family: 'Open Sans', sans-serif;
 
-	/* padded section */
-	.pad-section {
-	  padding: 50px 0;
+	height: 100%;
+
+	.vcenter {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		flex-direction: column;
 	}
-	.pad-section img {
-	  width: 100%;
-	}
-	.alpha60 {
-	  /* Fallback for web browsers that doesn't support RGBa */
-	  background: rgb(0, 0, 0);
-	  /* RGBa with 0.6 opacity */
-	  background: rgba(0, 0, 0, 0.6);
-	}
-	/* vertical-centered text */
-	.text-vcenter {
-	  display: table-cell;
-	  text-align: center;
-	  vertical-align: middle;
-	}
-	.text-vcenter h1 {
-	  font-size: 4.5em;
-	  font-weight: 700;
-	  margin: 0;
-	  padding: 0;
-	}
+
 	#home {
-		display: table;
 		height: 100%;
-		position: relative;
 		width: 100%;
+		position: relative;
+
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		hr {
+	        border: none;
+	        height: 5px;
+	        color: #333;
+	        background-color: #333;
+	        width: 60%;
+	        margin-left: auto;
+	        margin-right: auto;
+	    }
+	}
+
+	#home::after {
+		content: "";
+		background: url(/static/images/index/01.jpg);
+		background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-	}
-	#home::after {
-		content: "";
-		background: url({{site.baseurl}}/image/EEE_4612.jpg);
 		opacity: 0.5;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
 		position: absolute;
-		z-index: -1;   
-		background-position:30% 20%;
+		z-index: -1;
 	}
+
+	#about1 {
+		height: 100%;
+		width: 100%;
+		position: relative;
+
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		
+	}
+
+	.left {
+		position: absolute;
+
+		left:0;
+		right:50%;
+
+		top:0;
+		bottom: 0;
+
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.right {
+		position: absolute;
+
+		left:50%;
+		right:0;
+
+		top:0;
+		bottom: 0;
+
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	h1 {
+	  font-size: 4.5em;
+	  font-weight: 700;
+	  margin: 0;
+	  padding: 0;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-right {
+	margin-right: 0;
+}
+
+#content {
+	height: 100%;
+}
+
+.more_btn {
+	text-decoration: none;
+    line-height: 0.5em;
+    i {
+    	font-size: 1.5em;
+    }
+    
 }
