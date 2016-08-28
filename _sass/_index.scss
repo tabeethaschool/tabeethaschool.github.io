@@ -122,10 +122,31 @@ html, body {
 .navbar-right {
 	margin-right: 0;
 }
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  height: 60px
+}
 
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.container-text-muted {
+  margin: 20px 0;
+}
 #content {
 	height: 100%;
 }
+
+
 
 .more_btn {
 	text-decoration: none;
@@ -133,5 +154,7 @@ html, body {
     i {
     	font-size: 1.5em;
     }
-    
+
+
+   
 }
