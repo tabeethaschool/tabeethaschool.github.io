@@ -1,0 +1,53 @@
+#index {
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+
+	/* padded section */
+	.pad-section {
+	  padding: 50px 0;
+	}
+	.pad-section img {
+	  width: 100%;
+	}
+	.alpha60 {
+	  /* Fallback for web browsers that doesn't support RGBa */
+	  background: rgb(0, 0, 0);
+	  /* RGBa with 0.6 opacity */
+	  background: rgba(0, 0, 0, 0.6);
+	}
+	/* vertical-centered text */
+	.text-vcenter {
+	  display: table-cell;
+	  text-align: center;
+	  vertical-align: middle;
+	}
+	.text-vcenter h1 {
+	  font-size: 4.5em;
+	  font-weight: 700;
+	  margin: 0;
+	  padding: 0;
+	}
+	#home {
+		display: table;
+		height: 100%;
+		position: relative;
+		width: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#home::after {
+		content: "";
+		background: url({{site.baseurl}}/image/EEE_4612.jpg);
+		opacity: 0.5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: -1;   
+		background-position:30% 20%;
+	}
+}
