@@ -123,7 +123,7 @@ html, body {
 	margin-right: 0;
 }
 .footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -135,13 +135,13 @@ html, body {
 
 .container {
   width: auto;
-  max-width: 680px;
   padding: 0 15px;
 }
 
 .container-text-muted {
   margin: 20px 0;
 }
+
 #content {
 	height: 100%;
 }
