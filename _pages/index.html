@@ -2,23 +2,24 @@
 layout: default
 title: Home
 order: 1
+permalink: "/"
 ---
 
-<div id="index" class="content page-scroll">
 <!-- first section - Home -->
-    <div id="home" class="" >
-        <h1>{{ site.title }}</h1>
-        <hr/>
-        <h3>{{ site.description }}</h3>
-        <p></p>
-        <a href="#about1" class="more_btn">
-            More<br/>
-            <i class="glyphicon glyphicon-chevron-down"></i>
-        </a>
-    </div>
+<div class="full_bg_image"></div>
+
+<div id="home" class="full" >
+    <h1>{{ site.title }}</h1>
+    <hr/>
+    <h3>{{ site.description }}</h3>
+    <p></p>
+    <a href="#about1" class="more_btn">
+        More<br/>
+        <i class="glyphicon glyphicon-chevron-down"></i>
+    </a>
 </div>
-<div id="index" class="content page-scroll">
-<div id="about1" class="pad-section" >
+
+<div id="about1" class="pad-section full" >
     <div class="left">
         <img src="{{ size.baseurl}}/static/images/index/about1.jpg" />
     </div>
@@ -30,5 +31,4 @@ order: 1
             <i class="glyphicon glyphicon-chevron-down"></i>
         </a>
     </div>
-</div>
 </div>

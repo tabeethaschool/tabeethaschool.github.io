@@ -25,3 +25,5 @@ sass:
 markdown: kramdown
 
 exclude: ["vendor"]
+
+include: ['_pages']
