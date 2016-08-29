@@ -16,6 +16,8 @@
 title: Tabeetha School
 email: office@tabeethaschool.org
 description: School in Jaffa since 1863
+header_image: "/static/images/index/01.jpg"
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tabeethaschool.github.io" # the base hostname & protocol for your site
 github_username:  tabeethaschool

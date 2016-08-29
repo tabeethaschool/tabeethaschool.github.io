@@ -1,0 +1,58 @@
+---
+layout: default
+title: Home
+order: 1
+permalink: "/"
+---
+{% assign about_pages = site.pages | where_exp:"page","page.dir == '/_pages/index/about/'" %}
+{% assign side_classes = "left,right"|split:"," %}
+
+<!-- first section - Home -->
+{% if page.header_image %}
+<div class="full_bg_image" style='background-image: url("{{page.image}}")'></div>
+{% else %}
+<div class="full_bg_image" style='background-image: url("{{site.header_image}}")'></div>
+{% endif %}
+<div id="home" class="full vcenter" >
+    <h1>{{ site.title }}</h1>
+    <hr/>
+    <h3>{{ site.description }}</h3>
+    <p></p>
+    {% assign next_name_list = about_pages[0]["name"] | split:"." %}
+    {% assign next_name = next_name_list | reverse | shift | reverse | join:"" %}
+    <a href="#{{ next_name }}" class="more_btn">
+        More<br/>
+        <i class="glyphicon glyphicon-chevron-down"></i>
+    </a>
+</div>
+
+
+{% for about_page in about_pages %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% assign loopindex_2 = forloop.index0 | modulo: 2 %}
+    {% assign imageclass = side_classes[loopindex_2] %}
+    {% assign textclass = side_classes[loopindex] %}
+
+    {% assign name_list = about_page["name"] | split:"." %}
+    {% assign name = name_list | reverse | shift | reverse | join:"" %}
+
+    <div id="{{name}}" class="pad-section full" >
+        <div class="{{ imageclass }}">
+            <img src="{{ size.baseurl}}{{ about_page.image }}" />
+        </div>
+        <div class="{{ textclass }} vcenter">
+            {{ about_page.content }}
+            <p></p>
+            {% if forloop.last == false %}
+                {% assign next_name_list = about_pages[forloop.index]["name"] | split:"." %}
+                {% assign next_name = next_name_list | reverse | shift | reverse | join:"" %}
+
+                <a href="#{{next_name}}" class="more_btn">
+                    More<br/>
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                </a>
+
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
