@@ -20,7 +20,7 @@ permalink: "/"
     <p></p>
     {% assign next_name_list = about_pages[0]["name"] | split:"." %}
     {% assign next_name = next_name_list | reverse | shift | reverse | join:"" %}
-    <a href="#{{ next_name }}" class="more_btn">
+    <a href="#{{ next_name }}" class="more_btn page-scroll">
         More<br/>
         <i class="glyphicon glyphicon-chevron-down"></i>
     </a>
@@ -47,7 +47,7 @@ permalink: "/"
                 {% assign next_name_list = about_pages[forloop.index]["name"] | split:"." %}
                 {% assign next_name = next_name_list | reverse | shift | reverse | join:"" %}
 
-                <a href="#{{next_name}}" class="more_btn">
+                <a href="#{{next_name}}" class="more_btn page-scroll">
                     More<br/>
                     <i class="glyphicon glyphicon-chevron-down"></i>
                 </a>
