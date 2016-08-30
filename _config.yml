@@ -32,7 +32,7 @@ include: ['_pages']
 
 
 prose:
-  ignore: ['_config.yml', 'js', 'css', '_sass', '_layouts', '_includes', '.gitignore', 'Gemfile', 'Gemfile.lock','feed.xml']
+  ignore: ['_config.yml', 'js', 'css', '_sass', '_layouts', '_includes', 'static', '.gitignore', 'Gemfile', 'Gemfile.lock','feed.xml']
   siteurl: "https://tabeethaschool.github.io"
   media: "static/images"
   metadata:
