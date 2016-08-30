@@ -3,7 +3,7 @@ layout: page
 title: Contact
 order: 3
 ---
-<div id="index" class="content page-scroll">
+<div id="home" class="content page-scroll">
 	<div id="about1" class="pad-section vcenter" >
     	<p>
 			<i class="fa fa-phone" aria-hidden="true"></i> 
