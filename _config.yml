@@ -29,3 +29,15 @@ markdown: kramdown
 exclude: ["vendor"]
 
 include: ['_pages']
+
+
+prose:
+  ignore: ['_config.yml', 'js', 'css', '_sass', '_layouts', '_includes']
+  siteurl: "https://tabeethaschool.github.io"
+  media: "static/images"
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
