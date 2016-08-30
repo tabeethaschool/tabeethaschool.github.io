@@ -46,3 +46,9 @@ prose:
           element: "text"
           label: "date"
           value: CURRENT_DATETIME
+    _pages:
+      - name: "order"
+        field:
+          element: "number"
+          label: "order"
+          help: "Position in the Navigation-Bar (higher=more on the right)"
