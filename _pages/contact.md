@@ -3,8 +3,8 @@ layout: page
 title: Contact
 order: 3
 ---
-<<div id="home" class="full vcenter">
-	<div id="about1" class="pad-section vcenter" >
+<div id="home" class="full vcenter">
+	<div id="about1" class="vcenter" >
     	<p>
 			<i class="fa fa-phone" aria-hidden="true"></i> 
 			+972-3-682-1581
