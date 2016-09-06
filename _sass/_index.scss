@@ -148,6 +148,24 @@ html, body {
 
 }
 
+responsive-iframe-container {
+position: relative;
+padding-bottom: 75%;
+height: 0;
+overflow: hidden;
+}
+
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+
 .more_btn {
 	text-decoration: none;
     line-height: 0.5em;
