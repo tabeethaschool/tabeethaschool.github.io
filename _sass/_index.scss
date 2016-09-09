@@ -145,6 +145,7 @@ html, body {
 .boxes {
 	display: inline-block;
 	flex-direction: row;
+	padding: 15px;
 
 }
 
@@ -167,10 +168,35 @@ height: 100%;
 
 #calender {
 	position: fixed;
-	top: 70px;
+	top: 65px;
 	bottom: 65px;
 	width: 100%;
-	height: calc(100% - 135px);
+	height: calc(100% - 130px);
+}
+
+#staff {
+	position: fixed;
+	top: 50px;
+	bottom: 60px;
+	overflow:scroll;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+
+}
+
+#contact {
+	position: fixed;
+	top: 50px;
+	bottom: 60px;
+	overflow:scroll;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	display:flex;
+	flex-direction: column;
+	height: calc(100% - 110px);
+	width: 100%
 }
 
 .more_btn {
