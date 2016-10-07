@@ -1,0 +1,20 @@
+---
+layout: page
+title: Staff
+order: 5
+permalink: "/staff"
+---
+{% assign teacher_pages = site.pages | where_exp:"page","page.dir == '/_pages/staff/'" | sort:"order" %}
+
+{% for teacher_page in teacher_pages %}
+
+	<div id ="staff">
+		<div class="boxes">
+			<img src="{{teacher_page.image}}"><br>
+			{{teacher_page.name}}<br>
+			{{teacher_page.email}} <br>
+			{{teacher_page.subjects}}<br>
+		</div>
+	</div>
+
+{% endfor %}
